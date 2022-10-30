@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python main-kfold.py --log_dir wobert.log --data_dir data/split_word --pretrain_path pytorch_wobert --output_dir sentiment_model/test --train_batch_size 12 --do_train --cls_pooler pure

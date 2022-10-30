@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python main.py --log_dir test-k-fold.log --data_dir data/split_word --pretrain_path pytorch_wobert --output_dir sentiment_model/new_model5 --train_batch_size 16 --do_test --attack fgm --cls_pooler last3concat --hidden_pooler attention

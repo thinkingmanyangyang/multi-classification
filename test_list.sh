@@ -1,0 +1,6 @@
+python main_k_fold.py --log_dir test.log --data_dir data/split_word --pretrain_path pytorch_wobert --output_dir sentiment_model/new_model1 --train_batch_size 16 --do_test --attack fgm --cls_pooler pure
+python main_k_fold.py --log_dir test.log --data_dir data/split_word --pretrain_path pytorch_wobert --output_dir sentiment_model/new_model2 --train_batch_size 16 --do_test --attack fgm --cls_pooler last3concat
+python main_k_fold.py --log_dir test.log --data_dir data/split_word --pretrain_path pytorch_wobert --output_dir sentiment_model/new_model3 --train_batch_size 16 --do_test --attack fgm --cls_pooler pure --hidden_pooler lstm_attention
+python main_k_fold.py --log_dir test.log --data_dir data/split_word --pretrain_path pytorch_wobert --output_dir sentiment_model/new_model4 --train_batch_size 16 --do_test --attack fgm --cls_pooler pure --hidden_pooler attention
+python main_k_fold.py --log_dir test.log --data_dir data/split_word --pretrain_path pytorch_wobert --output_dir sentiment_model/new_model5 --train_batch_size 16 --do_test --attack fgm --cls_pooler last3concat --hidden_pooler attention
+python main_k_fold.py --log_dir test.log --data_dir data/split_word --pretrain_path pytorch_wobert --output_dir sentiment_model/new_model6 --train_batch_size 16 --do_test --attack fgm --cls_pooler last3concat --hidden_pooler lstm_attention
